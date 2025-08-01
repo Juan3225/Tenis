@@ -1,0 +1,66 @@
+/* Reset de márgenes y paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden; /* Evita scroll si no lo necesitas */
+
+  /* Fondo: imagen + capa oscura */
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('imagenes/cancha.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: zoomIn 20s infinite alternate ease-in-out;
+}
+
+/* Contenedor principal */
+.inicioSesion {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  color: white;
+  text-align: center;
+}
+
+/* Título */
+.inicioSesion h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 10px black;
+  margin-bottom: 1rem;
+}
+
+/* Botones */
+button {
+  width: 200px;
+  height: 60px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #6DBF53, #3D9F48);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes zoomIn {
+  0% { background-size: 100%; }
+  100% { background-size: 110%; }
+}

@@ -1,55 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Marcador de Tenis</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio de sesion</title>
+  <link rel="stylesheet" href="inicioSesion.css" />
 </head>
 <body>
-  <div class="pantalla">
-    <div class="jugador jugador1">
-      <h1>Jugador 1</h1>
-      <div class="partido">
-        <div class="columna">
-          <p class="label">Games</p>
-          <p class="games" id="sumarGameJug1">0</p>
-        </div>
-        <div class="columna">
-          <p class="label">Sets</p>
-          <p class="sets" id="setJug1">0</p>
-        </div>
-      </div>
-      <div class="puntos">
-        <button onclick="restarJugador1()">-</button>
-        <p class="puntaje" id="puntaje1">0</p>
-        <button onclick="sumarJugador1()">+</button>
-      </div>
-    </div>
-
-    <div class="jugador jugador2">
-      <h1>Jugador 2</h1>
-      <div class="partido">
-        <div class="columna">
-          <p class="label">Games</p>
-          <p class="games" id="sumarGameJug2">0</p>
-        </div>
-        <div class="columna">
-          <p class="label">Sets</p>
-          <p class="sets" id="setJug2">0</p>
-        </div>
-      </div>
-      <div class="puntos">
-        <button onclick="restarJugador2()">-</button>
-        <p class="puntaje" id="puntaje2">0</p>
-        <button onclick="sumarJugador2()">+</button>
-      </div>
-    </div>
+  <div class="inicioSesion"> 
+    <h1>Ingresar como</h1>
+    <button onclick="window.location.href='juez.html'">Juez</button>
+    <button>Socio</button>
   </div>
-
-  <!-- Texto informativo: deuce, ventaja, punto decisivo -->
-  <p id="estado" class="estado"></p>
-
-  <script src="script.js"></script>
 </body>
 </html>
